@@ -175,7 +175,7 @@ function App() {
 
         {/* Output box */}
         {output && (
-          <div className="bg-white mt-10 p-6 rounded-2xl shadow-md relative max-w-[90%] sm:max-w-2xl mx-auto text-left">
+          <div className="bg-white mt-10 p-6 rounded-2xl shadow-md relative max-w-[95%] sm:max-w-2xl mx-auto text-left">
             <p className="text-lg break-words">{output}</p>
             <button
               className="absolute top-4 right-4 text-gray-600 hover:text-black"
