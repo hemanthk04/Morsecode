@@ -199,7 +199,7 @@ function App() {
       <footer className="bg-[#31261A] py-4">
         <p className="text-sm circular-book mx-auto text-white flex  justify-center items-center">
           <a
-            href="https://github.com/rohit-pandey/Morse-Code-Converter"
+            href="https://github.com/hemanthk04/Morsecode"Adde
             target="_blank"
             rel="noopener noreferrer"
             className="flex gap-1"
