@@ -101,7 +101,10 @@ function App() {
   };
 
   return (
-    <div className="bg-[#FFF3E4] min-h-screen flex flex-col">
+    <div
+      style={{ minHeight: "100svh" }}
+      className="bg-[#FFF3E4]  flex flex-col"
+    >
       {/* Main content */}
       <div className="text-center flex-grow">
         {/* Heading */}
