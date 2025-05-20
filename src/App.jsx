@@ -105,11 +105,11 @@ function App() {
       {/* Main content */}
       <div className="text-center flex-grow">
         {/* Heading */}
-        <h1 className="text-6xl text-[#31261A] pt-20 circular-black leading-[0.7]">
+        <h1 className="text-4xl sm:text-6xl text-[#31261A] pt-40 sm:pt-20 circular-black leading-[0.5] sm:leading-[0.7]">
           Turn your text
           <img
             src={spyIcon}
-            className="inline-block w-24 h-24 mx-1 align-middle"
+            className="inline-block w-16 h-16 sm:w-24 sm:h-24 mx-1 align-middle"
             alt="Spy Icon"
           />
           <br />
@@ -120,7 +120,7 @@ function App() {
         <div className="mt-10 flex justify-center rounded-full gap-0">
           <button
             onClick={() => setMode("to")}
-            className={`px-8 py-4 rounded-tl-full rounded-bl-full circular-book transition  ${
+            className={`px-6 sm:px-8 py-3 sm:py-4 rounded-tl-full rounded-bl-full circular-book transition  ${
               mode === "to"
                 ? "bg-[#31261A] text-white shadow-[inset_0_-8px_4px_rgba(128,128,128,0.25)]"
                 : "bg-white text-black border border-black shadow-[inset_0_-4px_4px_rgba(0,0,0,0.25)]"
@@ -131,7 +131,7 @@ function App() {
 
           <button
             onClick={() => setMode("from")}
-            className={`px-7 py-4 rounded-tr-full rounded-br-full circular-book transition shadow-[inset_0_-4px_4px_rgba(0,0,0,0.25)] ${
+            className={`px-5 sm:px-7 py-3 sm:py-4 rounded-tr-full rounded-br-full circular-book transition shadow-[inset_0_-4px_4px_rgba(0,0,0,0.25)] ${
               mode === "from"
                 ? "bg-[#31261A] text-white"
                 : "bg-white text-black border border-black"
@@ -152,22 +152,22 @@ function App() {
                 ? "Enter your message to Convert..."
                 : "Enter Morse code (e.g. .... . .-.. .-.. ---)"
             }
-            className="w-full py-6 px-8 circular-book rounded-full border border-gray-400 bg-white text-lg shadow-sm focus:outline-none focus:ring-none transition"
+            className="w-9/10 sm:w-full py-4 sm:py-6 px-8 circular-book rounded-full border border-gray-400 bg-white text-lg shadow-sm focus:outline-none focus:ring-none transition"
             autoComplete="off"
           />
         </div>
 
         {/* Convert + Clear buttons */}
-        <div className="max-w-xl mx-auto flex gap-2 justify-center mt-2">
+        <div className="max-w-[90%] sm:max-w-xl mx-auto flex gap-2 justify-center mt-2">
           <button
             onClick={convert}
-            className="bg-[#31261A] w-1/2 circular-medium text-white px-6 py-4 rounded-full border border-gray-400 hover:opacity-90 transition shadow-[inset_0_-8px_4px_rgba(128,128,128,0.25)]"
+            className="bg-[#31261A] w-1/2 circular-medium text-white px-6 py-3 sm:py-4 rounded-full border border-gray-400 hover:opacity-90 transition shadow-[inset_0_-8px_4px_rgba(128,128,128,0.25)]"
           >
             Convert
           </button>
           <button
             onClick={clear}
-            className="bg-white w-1/2 circular-medium text-black px-6 py-4 rounded-full border border-gray-400 transition shadow-[inset_0_-4px_4px_rgba(0,0,0,0.25)]"
+            className="bg-white w-1/2 circular-medium text-black px-6 py-3 sm:py-4 rounded-full border border-gray-400 transition shadow-[inset_0_-4px_4px_rgba(0,0,0,0.25)]"
           >
             Clear
           </button>
@@ -175,7 +175,7 @@ function App() {
 
         {/* Output box */}
         {output && (
-          <div className="bg-white mt-10 p-6 rounded-2xl shadow-md relative max-w-2xl mx-auto text-left">
+          <div className="bg-white mt-10 p-6 rounded-2xl shadow-md relative max-w-[90%] sm:max-w-2xl mx-auto text-left">
             <p className="text-lg break-words">{output}</p>
             <button
               className="absolute top-4 right-4 text-gray-600 hover:text-black"
@@ -199,7 +199,8 @@ function App() {
       <footer className="bg-[#31261A] py-4">
         <p className="text-sm circular-book mx-auto text-white flex  justify-center items-center">
           <a
-            href="https://github.com/hemanthk04/Morsecode"Adde
+            href="https://github.com/hemanthk04/Morsecode"
+            Adde
             target="_blank"
             rel="noopener noreferrer"
             className="flex gap-1"
