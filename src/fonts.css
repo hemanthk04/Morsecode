@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'CircularBlack';
+    src: url('./assets/fonts/CircularStd-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'CircularMedium';
+    src: url('./assets/fonts/CircularStd-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'CircularBook';
+    src: url('./assets/fonts/CircularStd-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

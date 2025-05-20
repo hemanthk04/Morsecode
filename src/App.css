@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.circular-black {
+  font-family: 'CircularBlack', sans-serif;
+}
+
+.circular-medium {
+  font-family: 'CircularMedium', sans-serif;
+}
+
+.circular-book {
+  font-family: 'CircularBook', sans-serif;
+}
